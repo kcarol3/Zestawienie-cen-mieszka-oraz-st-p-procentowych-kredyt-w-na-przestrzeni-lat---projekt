@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="https://localhost:8000/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="App.Service.SoapService" targetNamespace="https://localhost:8000/wsdl">
+    <types>
+        <xsd:schema targetNamespace="https://localhost:8000/wsdl">
+            <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+        </xsd:schema>
+    </types>
+    <portType name="App.Service.SoapServicePort">
+        <operation name="getRecordCount">
+            <input message="tns:getRecordCountIn"/>
+            <output message="tns:getRecordCountOut"/>
+        </operation>
+    </portType>
+    <binding name="App.Service.SoapServiceBinding" type="tns:App.Service.SoapServicePort">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getRecordCount">
+            <soap:operation soapAction="https://localhost:8000/wsdl#getRecordCount"/>
+            <input>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="https://localhost:8000/wsdl"/>
+            </input>
+            <output>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="https://localhost:8000/wsdl"/>
+            </output>
+        </operation>
+    </binding>
+    <message name="getRecordCountIn">
+        <part name="tableName" type="xsd:anyType"/>
+    </message>
+    <message name="getRecordCountOut">
+        <part name="return" type="xsd:int"/>
+    </message>
+    <service name="App.Service.SoapServiceService">
+        <port name="App.Service.SoapServicePort" binding="tns:App.Service.SoapServiceBinding">
+            <soap:address location="https://localhost:8000/wsdl"/>
+        </port>
+    </service>
+</definitions>
