@@ -17,7 +17,13 @@ Projekt zawiera:
 Widoki aplikacji po zalogowaniu:
 
 Tabela:
-![Alt text](/../<Zestawienie-cen-mieszka-oraz-st-p-procentowych-kredyt-w-na-przestrzeni-lat---projekt>/path/to/screen1.png?raw=true "Optional Title")
+![ScreenShot](https://raw.github.com/kcarol3/Zestawienie-cen-mieszka-oraz-st-p-procentowych-kredyt-w-na-przestrzeni-lat---projekt/main/screen1.png)
+
+Wykres:
+![ScreenShot](https://raw.github.com/kcarol3/Zestawienie-cen-mieszka-oraz-st-p-procentowych-kredyt-w-na-przestrzeni-lat---projekt/main/screen2.png)
+
+Panel admina:
+![ScreenShot](https://raw.github.com/kcarol3/Zestawienie-cen-mieszka-oraz-st-p-procentowych-kredyt-w-na-przestrzeni-lat---projekt/main/screen3.png)
 
 Środowisko testowe:
 Windows 10
