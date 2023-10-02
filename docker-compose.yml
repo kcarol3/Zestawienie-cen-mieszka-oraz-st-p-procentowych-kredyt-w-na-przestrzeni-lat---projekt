@@ -1,0 +1,39 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./IS_project
+      dockerfile: Dockerfile
+    ports:
+      - 8000:80
+    volumes:
+      - ./IS_project:/var/www/html
+    depends_on:
+      - mysql
+  frontend:
+    build:
+      context: ./is_project_front
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - ./is_project_front:/app
+
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: is_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    volumes:
+      - "./mysql:/docker-entrypoint-initdb.d"
+  phpmyadmin:
+    depends_on:
+       - mysql
+    image: phpmyadmin/phpmyadmin
+    ports:
+       - 6606:80
+    environment:
+      - PMA_HOST=mysql
+      - PMA_PORT=3306
