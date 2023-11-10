@@ -1,4 +1,4 @@
-#Zestawienie Cen Mieszkań oraz Stóp Procentowych Kredytów na Przestrzeni Lat
+# Zestawienie Cen Mieszkań oraz Stóp Procentowych Kredytów na Przestrzeni Lat
 
 ### Opis
 Projekt zaliczeniowy stworzony w Symfony i Vue.js. Celem projektu jest analiza dostępnych danych dotyczących cen mieszkań i stóp procentowych na przestrzeni lat.
