@@ -15,13 +15,13 @@ Projekt zaliczeniowy stworzony w Symfony i Vue.js. Celem projektu jest analiza d
 ### Widoki Aplikacji
 #### Po Zalogowaniu
 1. **Tabela**
-   ![Tabela](link_do_zdjęcia)
+   ![Tabela](https://github.com/kcarol3/Zestawienie-cen-mieszka-oraz-st-p-procentowych-kredyt-w-na-przestrzeni-lat---projekt/blob/main/screen1.png)
 
 2. **Wykres**
-   ![Wykres](link_do_zdjęcia)
+   ![Wykres](https://github.com/kcarol3/Zestawienie-cen-mieszka-oraz-st-p-procentowych-kredyt-w-na-przestrzeni-lat---projekt/blob/main/screen2.png)
 
 3. **Panel Administratora**
-   ![Panel Admina](link_do_zdjęcia)
+   ![Panel Admina](https://github.com/kcarol3/Zestawienie-cen-mieszka-oraz-st-p-procentowych-kredyt-w-na-przestrzeni-lat---projekt/blob/main/screen3.png)
 
 ### Wymagania Systemowe
 - Środowisko testowe: Windows 10, XAMPP Version: 8.2.0
